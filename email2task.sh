@@ -8,7 +8,7 @@ set -e                                              # abort in case of error
 
 access="user@mailhost.com:topsecret"                # username:credentials
 host="imaps://mailhost.com"                         # host url
-logfile="/var/log/email2task.log"                   # log file, make shure that you have access
+logfile="/var/log/email2task.log"                   # log file, make sure that you have access
 
 # get number of emails 
 anz=$(curl --silent --url $host --user $access -X 'SELECT INBOX' |grep EXISTS | cut -c 3-4)
