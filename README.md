@@ -14,3 +14,13 @@ host="imaps://mailhost.com"
 logfile="/var/log/email2task.log"   
 
 Make sure you have write-access to the logfile
+
+## Usage
+
+Send a Email (text no HTML) to your Taskwarrior-Email Account
+Subject:    whatever you want, it will not be used
+Text/Body:  add add Pay the rent
+
+On your computer start **email2task.sh** 
+
+_You can also run the script automatically every time you start the system._
