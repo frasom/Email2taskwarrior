@@ -20,9 +20,9 @@ for((i=0; i<$anz; i++))
     commopt=$(curl --silent --url $host"/INBOX;MAILINDEX=1;SECTION=Text" --user $access)
     echo "$(date "+%F %H:%M:%S") MailID $i $commopt" >> $logfile
     # create task
-    task $commopt
+    task $commopt >> $logfile
     # delete email, after deleting the next email gets the number 1
-    curl --silent --url $host"/INBOX;MAILINDEX=1" --user $access -X "STORE 1 +Flags \Deleted"
-    curl --silent --url $host"/INBOX;MAILINDEX=1" --user $access -X "EXPUNGE"
+    curl --silent --url $host"/INBOX;MAILINDEX=1" --user $access -X "STORE 1 +Flags \Deleted" >> $logfile
+    curl --silent --url $host"/INBOX;MAILINDEX=1" --user $access -X "EXPUNGE" >> $logfile
 done
 exit 0
