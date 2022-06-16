@@ -3,7 +3,8 @@ Simple solution to create tasks via email in taskworrior
 
 ## Description
 Taskwarrior is a great solution for TODO lists but unfortunately not available everywhere.
-With email2task you can send yourself a new task via email. **A separate e-mail-account is required since all e-mails are read and deleted.**
+With email2task you can send yourself a new task via email. **A separate email account is required as all emails are read and then deleted.**
+the script uses IMAP, so the mail server should also support the IMAP protocol
 
 ## Installation
 Clone the repo or copy email2task.sh to your computer
@@ -19,7 +20,8 @@ Make sure you have write-access to the logfile
 
 Send a Email (text no HTML) to your Taskwarrior-Email Account
 Subject:    whatever you want, it will not be used
-Text/Body:  add add Pay the rent
+Text/Body:  {task command} 
+Example:    add Pay the rent
 
 On your computer start **email2task.sh** 
 
