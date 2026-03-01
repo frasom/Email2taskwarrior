@@ -1,6 +1,15 @@
 # Email2taskwarrior
 Simple solution to create tasks via email in taskworrior
 
+![Static Badge](https://img.shields.io/badge/OS-macOS_%7C_Linux-lightgrey)
+![Static Badge](https://img.shields.io/badge/Taskwarrior_is_needed-red)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/frasom/Email2taskwarrior)
+![GitHub last commit](https://img.shields.io/github/last-commit/frasom/Email2taskwarrior)
+![GitHub top language](https://img.shields.io/github/languages/top/frasom/Email2taskwarrior)
+![GitHub License](https://img.shields.io/github/license/frasom/Email2taskwarrior)
+![GitHub repo size](https://img.shields.io/github/repo-size/frasom/Email2taskwarrior)
+![GitHub Release](https://img.shields.io/github/v/release/frasom/Email2taskwarrior)
+
 ## Description
 Taskwarrior is a great solution for TODO lists but unfortunately not available everywhere.
 With email2task you can send yourself a new task via email. **A separate email account is required as all emails are read and then deleted.**
